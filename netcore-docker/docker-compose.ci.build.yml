@@ -6,4 +6,4 @@ services:
     volumes:
       - .:/src
     working_dir: /src
-    command: /bin/bash -c "dotnet restore ./netcore-docker.csproj && dotnet publish ./netcore-docker.csproj -c Release -o ./obj/Docker/publish"
+    command: /bin/bash -c "dotnet restore ./netcore-docker.csproj && dotnet publish ./netcore-docker.csproj -c Release -o ./DockerPublish"
