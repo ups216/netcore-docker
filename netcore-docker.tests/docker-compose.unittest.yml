@@ -1,0 +1,9 @@
+﻿version: '2'
+
+services:
+  IdentityServer-ci-build:
+    image: mcr.microsoft.com/dotnet/core/sdk:3.0-buster
+    volumes:
+      - .:/src
+    working_dir: /src
+    command: /bin/bash -c "dotnet test"
